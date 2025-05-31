@@ -1,0 +1,181 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #00c9ff, #92fe9d);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container principal */
+.container {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 25px;
+    color: #333333;
+    font-size: 2rem;
+}
+
+/* Botão de upload */
+.file-input {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.file-input:hover {
+    background-color: #0056b3;
+}
+
+.file-input input {
+    display: none;
+}
+
+/* Área de opções */
+.options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.options label {
+    display: flex;
+    flex-direction: column;
+    color: #444444;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Inputs */
+input[type="number"] {
+    padding: 8px 10px;
+    width: 100px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botão de processar */
+button {
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Resultado */
+#result {
+    margin-top: 25px;
+    display: none;
+}
+
+#result h2 {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+#result img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
+}
+
+/* Link de download */
+#download {
+    display: inline-block;
+    margin-top: 100px;
+    padding: 10px 22px;
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+#download:hover {
+    background-color: #138496;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="number"] {
+        width: 150px;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+    font-size: 0.95rem;
+}
+
+footer p {
+    color: #444444;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
